@@ -51,6 +51,7 @@
             this.Imagebox.Location = new System.Drawing.Point(12, 12);
             this.Imagebox.Name = "Imagebox";
             this.Imagebox.Size = new System.Drawing.Size(661, 346);
+            this.Imagebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagebox.TabIndex = 1;
             this.Imagebox.TabStop = false;
             // 
@@ -88,6 +89,7 @@
             this.option2Button.Size = new System.Drawing.Size(172, 173);
             this.option2Button.TabIndex = 5;
             this.option2Button.UseVisualStyleBackColor = true;
+            this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
             // 
             // option3Button
             // 
@@ -96,6 +98,7 @@
             this.option3Button.Size = new System.Drawing.Size(172, 173);
             this.option3Button.TabIndex = 6;
             this.option3Button.UseVisualStyleBackColor = true;
+            this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
             // 
             // Form1
             // 

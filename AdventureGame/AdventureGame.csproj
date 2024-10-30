@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweatin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smug.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ace-attorney-phoenix-wright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ace-attorney-phoenix-wright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lorex-Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phoenix-wright-shocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\judge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courtroom bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\despair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rich.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guilty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
