@@ -355,7 +355,7 @@ namespace AdventureGame
                     Imagebox.Image = Properties.Resources.think;
                     break;
                 case 99:
-                    textboxLabel.Text = "Thanks for paying.";
+                    textboxLabel.Text = "Thanks for playing.";
                     questionLabel.Text = "";
                     option1Button.Text = "";
                     option2Button.Text = "";
