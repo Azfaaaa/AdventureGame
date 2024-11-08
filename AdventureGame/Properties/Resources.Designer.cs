@@ -101,11 +101,30 @@ namespace AdventureGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream gavel {
+            get {
+                return ResourceManager.GetStream("gavel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap guilty {
             get {
                 object obj = ResourceManager.GetObject("guilty", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hobo {
+            get {
+                object obj = ResourceManager.GetObject("hobo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +152,16 @@ namespace AdventureGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap not_guilty {
+            get {
+                object obj = ResourceManager.GetObject("not_guilty", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap office {
             get {
                 object obj = ResourceManager.GetObject("office", resourceCulture);
@@ -147,6 +176,15 @@ namespace AdventureGame.Properties {
             get {
                 object obj = ResourceManager.GetObject("page", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream paper {
+            get {
+                return ResourceManager.GetStream("paper", resourceCulture);
             }
         }
         

@@ -15,7 +15,8 @@ namespace AdventureGame
     public partial class Form1 : Form
     {
         int page = 1;
-        SoundPlayer sound = new SoundPlayer();
+        SoundPlayer paperplayer = new SoundPlayer(Properties.Resources.paper);
+        SoundPlayer gavelplayer = new SoundPlayer(Properties.Resources.gavel);
 
         public Form1()
         {
@@ -121,6 +122,7 @@ namespace AdventureGame
                     questionLabel.Text = "Should I read the case?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
+                    paperplayer.Play();
                     break;
                 case 4:
                     option3Button.Visible = false;
@@ -151,11 +153,15 @@ namespace AdventureGame
                     option2Button.Text = "";
                     Imagebox.Image = Properties.Resources.think;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
                     textboxLabel.Text = "What should I present to prove my client innocent?";
                     questionLabel.Text = "What to present...";
+                    gavelplayer.Play();
+                    option1Button.BackgroundImage = Properties.Resources.badge;
+                    option2Button.BackgroundImage = Properties.Resources.peel;
+                    option3Button.BackgroundImage = Properties.Resources.Lorex_Camera;
                     break;
                 case 7:
                     option3Button.Visible = false;
@@ -165,7 +171,7 @@ namespace AdventureGame
                     textboxLabel.Text = "I wonder if I have enough money... Let's go gambling!";
                     Imagebox.Image = Properties.Resources.gambling;
                     Refresh();
-                    Thread.Sleep(1000);
+                    Thread.Sleep(3000);
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
                     textboxLabel.Text += "\nWHOA! I just won the lottery! Guess I'll giva half of it to the judge. \nRich Ending.";
@@ -182,7 +188,7 @@ namespace AdventureGame
                     textboxLabel.Text = "I assume that means you have no more evidence, meaning the client is deemed...";
                     Imagebox.Image = Properties.Resources.judge;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     Imagebox.Image = Properties.Resources.guilty;
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
@@ -199,11 +205,11 @@ namespace AdventureGame
                     textboxLabel.Text = "And how does that prove anything, defence?";
                     Imagebox.Image = Properties.Resources.judge;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     Imagebox.Image = Properties.Resources.smug;
                     textboxLabel.Text = "It proves I'm an attourney!";
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(3500);
                     Imagebox.Image = Properties.Resources.despair;
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
@@ -220,15 +226,15 @@ namespace AdventureGame
                     textboxLabel.Text = "This footage shows the client near the scene of the crime, eating a banana. this clearly indicates that they were too preoccupied to commit murder.";
                     Imagebox.Image = Properties.Resources.page;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     Imagebox.Image = Properties.Resources.judge;
                     textboxLabel.Text = "Are you aware the murder weapon was a banana peel?";
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     Imagebox.Image = Properties.Resources.phoenix_wright_shocked;
                     textboxLabel.Text = "!?";
                     Refresh();
-                    Thread.Sleep(2000);
+                    Thread.Sleep(3000);
                     Imagebox.Image = Properties.Resources.guilty;
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
@@ -243,15 +249,15 @@ namespace AdventureGame
                     textboxLabel.Text = "My client couldn't have murdered the victim because they were eating this banana peel!";
                     Imagebox.Image = Properties.Resources.smug;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     Imagebox.Image = Properties.Resources.judge;
                     textboxLabel.Text = "How would you know that, Wright?";
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     Imagebox.Image = Properties.Resources.page;
                     textboxLabel.Text = "My client told me!";
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     Imagebox.Image = Properties.Resources.judge;
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
@@ -264,11 +270,14 @@ namespace AdventureGame
                     option1Button.Enabled = false;
                     option2Button.Enabled = false;
                     textboxLabel.Text = "As you can see in this footage, the client was busy eating a banana just before the murder!";
+                    Imagebox.Image = Properties.Resources.smug;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     textboxLabel.Text = "Are you aware the muder weapon was a banana peel?";
+                    Imagebox.Image = Properties.Resources.phoenix_wright_shocked;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
+                    Imagebox.Image = Properties.Resources.think;
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
                     textboxLabel.Text = "Well, my client was definetely eating a different banana at the time, and I can prove it!";
@@ -283,10 +292,12 @@ namespace AdventureGame
                     option1Button.Enabled = false;
                     option2Button.Enabled = false;
                     textboxLabel.Text = "As you can see here, the banana that my client ate was clearly a different color than the murder peel! meaning that them eating a banana was completely unrelated!";
+                    Imagebox.Image = Properties.Resources.smug;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
+                    Imagebox.Image = Properties.Resources.not_guilty;
                     textboxLabel.Text = "And so, after a hard fought case, I finally won! \nGot paid Ending";
                     questionLabel.Text = "Play again?";
                     option1Button.Text = "Yes";
@@ -298,10 +309,12 @@ namespace AdventureGame
                     option1Button.Enabled = false;
                     option2Button.Enabled = false;
                     textboxLabel.Text = "As you can see here, the banana that my client ate was clearly the same color as the murder peel! meaning that them eating a banana was Entirely related!";
+                    Imagebox.Image = Properties.Resources.smug;
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
+                    Imagebox.Image = Properties.Resources.judge;
                     textboxLabel.Text = "Are you sure that's the argument you want to make?";
                     questionLabel.Text = "Is that really what I want to say?";
                     option1Button.Text = "Yes";
@@ -310,6 +323,7 @@ namespace AdventureGame
                 case 15:
                     option3Button.Visible = false;
                     option3Button.Enabled = false;
+                    Imagebox.Image = Properties.Resources.hobo;
                     textboxLabel.Text = "You succeed, but you're in such heavy debt that you all your assets get seized. In Debt Ending";
                     questionLabel.Text = "Play again?";
                     option1Button.Text = "Yes";
@@ -321,8 +335,10 @@ namespace AdventureGame
                     option1Button.Enabled = false;
                     option2Button.Enabled = false;
                     textboxLabel.Text = "Well, thanks to the passionate argument of the defence, the defendant is deemed...";
+                    Imagebox.Image = Properties.Resources.judge;
                     Refresh();
-                    Thread.Sleep(500);
+                    Thread.Sleep(3500);
+                    Imagebox.Image = Properties.Resources.guilty;
                     option1Button.Enabled = true;
                     option2Button.Enabled = true;
                     textboxLabel.Text = "Guilty.\nYou won? Ending";
@@ -336,6 +352,7 @@ namespace AdventureGame
                     questionLabel.Text = "Accuse my client?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
+                    Imagebox.Image = Properties.Resources.think;
                     break;
                 case 99:
                     textboxLabel.Text = "Thanks for paying.";
@@ -343,13 +360,13 @@ namespace AdventureGame
                     option1Button.Text = "";
                     option2Button.Text = "";
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(3500);
                     Close();
                     break;
                 default:
                     textboxLabel.Text = "bro where are you";
                     Refresh();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     page = 1;
                     displayPage();
                     break;
@@ -362,7 +379,7 @@ namespace AdventureGame
             {
                 textboxLabel.Text = "But I need the money...";
                 Refresh();
-                Thread.Sleep(2500);
+                Thread.Sleep(3500);
                 page = 1;
             }
             else if (page == 2)
@@ -417,7 +434,7 @@ namespace AdventureGame
             {
                 textboxLabel.Text = "Uhhh, nevermind.";
                 Refresh();
-                Thread.Sleep(2000);
+                Thread.Sleep(3000);
                 page = 13;
             }
             else if (page == 16)

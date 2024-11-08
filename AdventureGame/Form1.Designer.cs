@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.Imagebox = new System.Windows.Forms.PictureBox();
             this.textboxLabel = new System.Windows.Forms.Label();
@@ -75,6 +76,7 @@
             // 
             // option1Button
             // 
+            this.option1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.option1Button.Location = new System.Drawing.Point(680, 12);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(172, 173);
@@ -84,6 +86,7 @@
             // 
             // option2Button
             // 
+            this.option2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.option2Button.Location = new System.Drawing.Point(679, 191);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(172, 173);
@@ -93,6 +96,7 @@
             // 
             // option3Button
             // 
+            this.option3Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.option3Button.Location = new System.Drawing.Point(680, 370);
             this.option3Button.Name = "option3Button";
             this.option3Button.Size = new System.Drawing.Size(172, 173);
@@ -113,8 +117,9 @@
             this.Controls.Add(this.textboxLabel);
             this.Controls.Add(this.Imagebox);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Phoenix Wrong: Fake Attorney";
             ((System.ComponentModel.ISupportInitialize)(this.Imagebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

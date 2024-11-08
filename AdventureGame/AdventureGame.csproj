@@ -131,5 +131,20 @@
   <ItemGroup>
     <None Include="Resources\page.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not guilty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hobo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\615336__rookster__paper_flip_02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Typewriter-SoundBible.com-285954942.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gavel.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
